@@ -46,7 +46,7 @@
           <h3 class="catalog-item-title">Зайчик-попрыгайчик</h3>
           <p class="catalog-item-description">Рост 30 см, вес 200 г</p>
           <p class="catalog-item-price"><span>1 200</span> руб.</p>
-          <button class="add-to-cart_btn">Добавить в корзину</button>
+          <button class="add-to-cart-btn">Добавить в корзину</button>
         </article>
         <article class="catalog-item-card">
           <a class="catalog-item-picture">
@@ -55,7 +55,7 @@
           <h3 class="catalog-item-title">Корзинка для белья</h3>
           <p class="catalog-item-description">Диаметр 15 см, высота 10 см</p>
           <p class="catalog-item-price"><span>690</span> руб.</p>
-          <button class="add-to-cart_btn">Добавить в корзину</button>
+          <button class="add-to-cart-btn">Добавить в корзину</button>
         </article>
         <article class="catalog-item-card">
           <a class="catalog-item-picture">
@@ -64,15 +64,17 @@
           <h3 class="catalog-item-title">Большая корзинка для игрушек</h3>
           <p class="catalog-item-description">Диаметр 30 см, высота 30 см</p>
           <p class="catalog-item-price"><span>1 500</span> руб.</p>
-          <button class="add-to-cart_btn">Добавить в корзину</button>
+          <button class="add-to-cart-btn">Добавить в корзину</button>
         </article>
       </section>
-      <article class="page-content__item production-clip">
-        <h2 class="visually-hidden">Как появляются наши товары</h2>
-        <h3 class="production-clip__title">Процесс производства</h3>
-        <video class="production-clip__movie" src="#" muted controls poster="mobile/video-mobile.jpg" width="260" height="150"></video>
-        <button class="movie-play-btn">Play</button>
-        <p class="production-clip__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <article class="page-content__item video-block">
+        <h2 class="visually-hidden">Дополнительная информация - видео</h2>
+        <h3 class="video-block-title">Процесс производства</h3>
+        <div class="video-block-player">
+          <video class="video-block-player__movie" src="#" muted controls poster="mobile/video-mobile.jpg" width="260" height="150"></video>
+          <button class="video-block-player__btn movie-play-btn">Play</button>
+        </div>
+        <p class="video-block-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <button class="btn">Сделать заказ</button>
       </article>
     </main>
