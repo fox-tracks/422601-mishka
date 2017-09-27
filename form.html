@@ -37,6 +37,57 @@
       <div class="page-content__item page-title">
         <h1 class="page-title-text">Вязание на заказ</h1>
       </div>
+      <p class="page-content__item form-introduction">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="#" method="post" class="page-content__item order-form">
+        <div class="fieldset">
+          <p class="fieldset__title">Тип</p>
+          <input type="radio" name="item-type" id="item-type-interior" value="interior" class="item-type-radiobtn" checked>
+          <label for="item-type-interior" class="fieldset__label">Аксессуар для  интерьера</label>
+          <input type="radio" name="item-type" id="item-type-toys" value="toys" class="item-type-radiobtn">
+          <label for="item-type-toys" class="fieldset__label">Детская игрушка</label>
+        </div>
+        <div class="fieldset">
+          <p class="fieldset__title">Цвет</p>
+          <input type="checkbox" name="item-color" id="item-color-white" value="white" class="item-color" checked>
+          <label for="item-color-white" class="fieldset__label">Белый</label>
+          <input type="checkbox" name="item-color" id="item-color-grey" value="grey" class="item-color" checked>
+          <label for="item-color-grey" class="fieldset__label">Серый</label>
+          <input type="checkbox" name="item-color" id="item-color-tiffany" value="tiffany" class="item-color">
+          <label for="item-color-tiffany" class="fieldset__label">«Тиффани»</label>
+          <input type="checkbox" name="item-color" id="item-color-black" value="black" class="item-color">
+          <label for="item-color-black" class="fieldset__label">Черный</label>
+          <input type="checkbox" name="item-color" id="item-color-pink" value="pink" class="item-color">
+          <label for="item-color-pink" class="fieldset__label">Розовый</label>
+          <input type="checkbox" name="item-color" id="item-color-orange" value="orange" class="item-color">
+          <label for="item-color-orange" class="fieldset__label">Оранжевый</label>
+        </div>
+        <div class="fieldset">
+          <p class="fieldset__title">Фио</p>
+          <label for="user-name" class="fieldset__label">Имя:</label>
+          <input type="text" name="user-name" id="user-name" placeholder="Введите ваше имя*" class="user-info user-info--name" required>
+          <label for="user-surname" class="fieldset__label">Фамилия:</label>
+          <input type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию*" class="user-info user-info--name" required>
+          <label for="user-patronymic" class="fieldset__label">Отчество:</label>
+          <input type="text" name="user-patronymic" id="user-patronymic" placeholder="Отчество, если желаете" class="user-info user-info--name">
+        </div>
+        <div class="fieldset">
+          <p class="fieldset__title">Тел</p>
+          <label for="user-tel" class="fieldset__label"></label>
+          <input type="tel" name="user-tel" id="user-tel" placeholder="+7 ХХХ ХХ ХХ*" pattern="[+]7 [0-9]{3} [0-9]{2} [0-9]{2}" class="user-info user-info--tel" required>
+        </div>
+        <div class="fieldset">
+          <p class="fieldset__title">E-mail</p>
+          <label for="user-email" class="fieldset__label"></label>
+          <input type="email" name="user-email" id="user-email" placeholder="Ваш Email*" class="user-info user-info--email" required>
+        </div>
+        <div class="fieldset">
+          <p class="fieldset__title">Доп</p>
+          <label for="user-additional-info" class="fieldset__label"></label>
+          <textarea name="user-additional-info" id="user-additional-info" placeholder="Опишите все ваши  пожелания к заказу" rows="10" cols="50" class="user-info--additional"></textarea>
+        </div>
+        <p class="fieldset__remark">*Поля обязательны для заполнения</p>
+        <button class="btn">Отправить заказ</button>
+      </form>
     </main>
     <footer class="page-footer">
       <section class="social-networks">
