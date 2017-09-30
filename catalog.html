@@ -12,104 +12,119 @@
         </a>
       </div>
       <button class="page-header__humburger-btn"></button>
-      <nav class="page-header__main header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-item">
-            <a href="#" class="header-menu-item__link">Каталог товаров</a>
+      <nav class="page-header__main menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu-item__link">Каталог товаров</a>
           </li>
-          <li class="header-menu-item">
-            <a href="#" class="header-menu-item__link">Вязание на заказ</a>
+          <li class="menu__item">
+            <a href="#" class="menu-item__link">Вязание на заказ</a>
           </li>
         </ul>
       </nav>
-      <nav class="page-header__user header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-item">
-            <a href="#" class="header-menu-item__link header-menu-item__link--icon-search">Поиск по сайту</a>
+      <nav class="page-header__user menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--icon-search">Поиск по сайту</a>
           </li>
-          <li class="header-menu-item">
-            <a href="#" class="header-menu-item__link header-menu-item__link--icon-cart">Корзина: пока пуста</a>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--icon-cart">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-content">
-      <div class="page-content__item page-title">
-        <h1 class="page-title-text">Каталог товаров</h1>
+      <div class="page-title page-title--with-image section">
+        <h1 class="page-title__text">Каталог товаров</h1>
       </div>
-      <section class="page-content__item catalog">
+      <section class="catalog section">
         <h2 class="visually-hidden">Список товаров</h2>
-        <article class="catalog-item-card">
-          <a class="catalog-item-picture">
-            <img class="catalog-item-picture__image" src="mobile/rabbit.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+        <article class="catalog__item">
+          <a href="rabbit.html" class="catalog__item-img">
+            <img src="mobile/rabbit.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
-          <h3 class="catalog-item-title">Зайчик-попрыгайчик</h3>
-          <p class="catalog-item-description">Рост 30 см, вес 200 г</p>
-          <p class="catalog-item-price"><span>1 200</span> руб.</p>
-          <button class="add-to-cart-btn">Добавить в корзину</button>
+          <h3 class="catalog__item-title">
+            <a href="rabbit.html">Зайчик-попрыгайчик</a>
+          </h3>
+          <p class=" catalog__item-descr">Рост 30 см, вес 200 г</p>
+          <div class="catalog__price-block">
+            <p class="catalog__item-price"><span>1 200</span> руб.</p>
+            <a class="add-to-cart-btn">Добавить в корзину</a>
+          </div>
         </article>
-        <article class="catalog-item-card">
-          <a class="catalog-item-picture">
-            <img class="catalog-item-picture__image" src="mobile/basket.jpg" alt="Корзинка для белья" width="260" height="195">
+        <article class="catalog__item">
+          <a href="basket.html" class="catalog__item-img">
+            <img src="mobile/basket.jpg" alt="Корзинка для белья" width="260" height="195">
           </a>
-          <h3 class="catalog-item-title">Корзинка для белья</h3>
-          <p class="catalog-item-description">Диаметр 15 см, высота 10 см</p>
-          <p class="catalog-item-price"><span>690</span> руб.</p>
-          <button class="add-to-cart-btn">Добавить в корзину</button>
+          <h3 class="catalog__item-title">
+            <a href="basket.html">Корзинка для белья</a>
+          </h3>
+          <p class=" catalog__item-descr">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog__price-block">
+            <p class="catalog__item-price"><span>690</span> руб.</p>
+            <a class="add-to-cart-btn">Добавить в корзину</a>
+          </div>
         </article>
-        <article class="catalog-item-card">
-          <a class="catalog-item-picture">
-            <img class="catalog-item-picture__image" src="mobile/big-toys-basket.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+        <article class="catalog__item">
+          <a href="big-toys-basket.html" class="catalog__item-img">
+            <img src="mobile/big-toys-basket.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
           </a>
-          <h3 class="catalog-item-title">Большая корзинка для игрушек</h3>
-          <p class="catalog-item-description">Диаметр 30 см, высота 30 см</p>
-          <p class="catalog-item-price"><span>1 500</span> руб.</p>
-          <button class="add-to-cart-btn">Добавить в корзину</button>
+          <h3 class="catalog__item-title">
+            <a href="big-toys-basket.html">Большая корзинка для игрушек</a>
+          </h3>
+          <p class=" catalog__item-descr">Диаметр 30 см, высота 30 см</p>
+          <div class="catalog__price-block">
+            <p class="catalog__item-price"><span>1 500</span> руб.</p>
+            <a class="add-to-cart-btn">Добавить в корзину</a>
+          </div>
         </article>
       </section>
-      <article class="page-content__item video-block">
+      <article class="video-block section">
         <h2 class="visually-hidden">Дополнительная информация - видео</h2>
-        <h3 class="video-block-title">Процесс производства</h3>
-        <div class="video-block-player">
-          <video class="video-block-player__movie" src="#" muted controls poster="mobile/video-mobile.jpg" width="260" height="150"></video>
-          <button class="video-block-player__btn movie-play-btn">Play</button>
+        <h3 class="video-block__title">Процесс производства</h3>
+        <div class="video-block__player">
+          <img src="mobile/video.jpg" alt="Процесс производства" width="260" height="150">
+          <button class="video-block__play-btn">Play</button>
         </div>
-        <p class="video-block-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="btn">Сделать заказ</button>
+        <p class="video-block__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="btn">Сделать заказ</a>
       </article>
     </main>
     <footer class="page-footer">
-      <section class="social-networks">
+      <section class="social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="social-networks-list">
-          <li class="social-networks-item">
-            <a href="#" class="social-networks-item__link">Инстаграм</a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link">Инстаграм</a>
           </li>
-          <li class="social-networks-item">
-            <a href="#" class="social-networks-item__link">Фейсбук</a>
+          <li class="social__item">
+            <a href="#" class="social__link">Фейсбук</a>
           </li>
-          <li class="social-networks-item">
-            <a href="#" class="social-networks-item__link">Твиттер</a>
+          <li class="social__item">
+            <a href="#" class="social__link">Твиттер</a>
           </li>
         </ul>
       </section>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">Разработано</a>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__author-link">Разработано</a>
     </footer>
-    <div class="popup">
-      <h2 class="section-title">Добавить в корзину</h2>
+    <div class="popup section">
+      <h2 class="popup__title section__title">Добавить в корзину</h2>
       <p>Выберите размер:</p>
-      <ul class="size-list">
-        <li class="size-list-item">
-          <button class="size-list-item__btn">S</button>
-        </li>
-        <li class="size-list-item">
-          <button class="size-list-item__btn">M</button>
-        </li>
-        <li class="size-list-item">
-          <button class="size-list-item__btn">L</button>
-        </li>
-      </ul>
-      <button class="btn btn--green">Добавить</button>
+      <form action="#" method="get" class="size-choice">
+        <div class="size-choice__btn-block">
+          <input type="radiobutton" name="size" id="size-s" class="size-choise__btn">
+          <label for="size-s" class="size-choice__label">S</label>
+        </div>
+        <div class="size-choice__btn-block">
+          <input type="radiobutton" name="size" id="size-m" class="size-choise__btn">
+          <label for="size-s" class="size-choice__label">M</label>
+        </div>
+        <div class="size-choice__btn-block">
+          <input type="radiobutton" name="size" id="size-l" class="size-choise__btn">
+          <label for="size-s" class="size-choice__label">L</label>
+        </div>
+        <button class="btn btn--green">Добавить</button>
+      </form>
     </div>
   </body>
 </html>
