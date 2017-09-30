@@ -12,8 +12,8 @@
         </a>
       </div>
       <button class="page-header__humburger-btn"></button>
-      <nav class="page-header__main menu">
-        <ul class="menu__list">
+      <nav class="page-header__menu">
+        <ul class="menu__main-list">
           <li class="menu__item">
             <a href="#" class="menu-item__link">Каталог товаров</a>
           </li>
@@ -21,9 +21,7 @@
             <a href="#" class="menu-item__link">Вязание на заказ</a>
           </li>
         </ul>
-      </nav>
-      <nav class="page-header__user menu">
-        <ul class="menu__list">
+        <ul class="menu__user-list">
           <li class="menu__item">
             <a href="#" class="menu__link menu__link--icon-search">Поиск по сайту</a>
           </li>
@@ -80,7 +78,6 @@
         </article>
       </section>
       <article class="video-block section">
-        <h2 class="visually-hidden">Дополнительная информация - видео</h2>
         <h3 class="video-block__title">Процесс производства</h3>
         <div class="video-block__player">
           <img src="mobile/video.jpg" alt="Процесс производства" width="260" height="150">
@@ -112,15 +109,15 @@
       <p>Выберите размер:</p>
       <form action="#" method="get" class="size-choice">
         <div class="size-choice__btn-block">
-          <input type="radiobutton" name="size" id="size-s" class="size-choise__btn">
+          <input type="checkbox" name="size" id="size-s" class="size-choise__btn">
           <label for="size-s" class="size-choice__label">S</label>
         </div>
         <div class="size-choice__btn-block">
-          <input type="radiobutton" name="size" id="size-m" class="size-choise__btn">
+          <input type="checkbox" name="size" id="size-m" class="size-choise__btn">
           <label for="size-s" class="size-choice__label">M</label>
         </div>
         <div class="size-choice__btn-block">
-          <input type="radiobutton" name="size" id="size-l" class="size-choise__btn">
+          <input type="checkbox" name="size" id="size-l" class="size-choise__btn">
           <label for="size-s" class="size-choice__label">L</label>
         </div>
         <button class="btn btn--green">Добавить</button>

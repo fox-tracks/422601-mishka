@@ -12,8 +12,8 @@
         </a>
       </div>
       <button class="page-header__humburger-btn"></button>
-      <nav class="page-header__main menu">
-        <ul class="menu__list">
+      <nav class="page-header__menu">
+        <ul class="menu__main-list">
           <li class="menu__item">
             <a href="#" class="menu-item__link">Каталог товаров</a>
           </li>
@@ -21,9 +21,7 @@
             <a href="#" class="menu-item__link">Вязание на заказ</a>
           </li>
         </ul>
-      </nav>
-      <nav class="page-header__user menu">
-        <ul class="menu__list">
+        <ul class="menu__user-list">
           <li class="menu__item">
             <a href="#" class="menu__link menu__link--icon-search">Поиск по сайту</a>
           </li>
@@ -86,10 +84,9 @@
       <article class="reviews section">
         <h2 class="rewiews__title section__title">Отзывы</h2>
         <div class="reviews__slider">
-          <blockquote class="reviews__item">
-            <p class="reviews__quote">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также
-              набирают больше лайков!</p>
+          <blockquote class="reviews__item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
+            В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+            больше лайков!
           </blockquote>
           <p class="reviews__author">Анастасия Красильникова</p>
           <a href="mailto:@misssssiskras" class="reviews__mail">@misssssiskras</a>
@@ -138,15 +135,15 @@
       <p>Выберите размер:</p>
       <form action="#" method="get" class="size-choice">
         <div class="size-choice__btn-block">
-          <input type="radiobutton" name="size" id="size-s" class="size-choise__btn">
+          <input type="checkbox" name="size" id="size-s" class="size-choise__btn">
           <label for="size-s" class="size-choice__label">S</label>
         </div>
         <div class="size-choice__btn-block">
-          <input type="radiobutton" name="size" id="size-m" class="size-choise__btn">
+          <input type="checkbox" name="size" id="size-m" class="size-choise__btn">
           <label for="size-s" class="size-choice__label">M</label>
         </div>
         <div class="size-choice__btn-block">
-          <input type="radiobutton" name="size" id="size-l" class="size-choise__btn">
+          <input type="checkbox" name="size" id="size-l" class="size-choise__btn">
           <label for="size-s" class="size-choice__label">L</label>
         </div>
         <button class="btn btn--green">Добавить</button>
