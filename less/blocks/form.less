@@ -1,0 +1,72 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid @lightgreen;
+  position: relative;
+  padding-top: 24px;
+  margin-bottom: 40px;
+}
+
+.form__field-title {
+  .indent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-right: 26px;
+  transform: translateY(-9px);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  color: @lightgreen;
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+}
+
+.form__wrapper {
+  min-height: 60px;
+}
+
+.form__label {
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: @black;
+}
+
+.form__input {
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+}
+.form__textarea {
+  width: 100%;
+  resize: none;
+}
+.form__placeholder {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(199, 199, 199);
+}
+.form__placeholder--textarea {
+    top: 3px;
+}
+
+.form__remark {
+  .indent;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: @darkgrey;
+}
