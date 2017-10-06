@@ -1,0 +1,29 @@
+.size-choice {
+  align-self: stretch;
+}
+
+.size-choice__btn-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.size-choise__btn {
+  display: none;
+}
+
+.size-choice__marker {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  color: @darkgrey;
+  width: 82px;
+  height: 52px;
+  border: 2px solid @lightgreyborder;
+}
+
+.size-choise__btn:checked~.size-choice__marker {
+  border: 2px solid @lightgreen;
+}

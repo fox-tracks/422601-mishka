@@ -1,17 +1,65 @@
 .reviews {
+  .marg;
   display: flex;
   flex-direction: column;
+  margin-bottom: 35px;
 }
 
 .reviews__title {
-  padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.reviews__slider {
+  margin-bottom: 34px;
 }
 
 .reviews__item {
   .indent;
-  margin: 0 30px 32px;
+  margin-bottom: 32px;
   font-size: 15px;
   line-height: 30px;
   color: @darkgrey;
+}
+
+.reviews__author {
+  .indent;
+  margin-bottom: 11px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: @black;
+}
+
+.reviews__mail {
+  .indent;
+  font-size: 17px;
+  line-height: 30px;
+  color: @darkgrey;
+}
+
+.reviews__nav {
+  margin-bottom: 38px;
+  text-align: center;
+  display: flex;
+}
+
+.reviews__btn {
+  width: 50%;
+  height: 52px;
+  background-color: @white;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.reviews__btn--prev {
+  border-top: 1px solid @lightgreyborder;
+  border-left: 1px solid @lightgreyborder;
+  border-bottom: 1px solid @lightgreyborder;
+  border-right: none;
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.reviews__btn--next {
+  border: 1px solid @lightgreyborder;
+  background-image: url("../img/icon-right-arrow.svg");
 }
