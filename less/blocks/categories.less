@@ -1,34 +1,29 @@
 .categories {
-  .indent;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .categories__list {
-  .indent;
+  .list;
+  color: @white;
 }
 
 .categories__item {
-  .list;
+  &--interior {
+    color: inherit;
+    background-color: @lightgreen;
+  };
+  &--toys {
+    color: inherit;
+    background-color: @darkgreen;
+  };
 }
-
-.categories__item--interior {
-  color: @white;
-  background-color: @lightgreen;
-}
-
-.categories__item--toys {
-  color: @white;
-  background-color: @darkgreen;
-}
-
 .categories__link {
-  display: inline-block;
-  color: @white;
+  display: block;
   padding: 28px 30px 29px;
-  width: 100%;
+  color: inherit;
 }
 
 .categories__text {

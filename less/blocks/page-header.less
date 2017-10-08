@@ -3,22 +3,21 @@
 }
 
 .page-header__container {
-  .greyborder;
   padding: 22px 30px 21px;
   text-align: center;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: @lightgreyborder;
+  border: 1px solid @lightgreyborder;
+  border-right: 0;
+  border-left: 0;
 }
 
 .page-header__humburger-btn {
+  .indent;
+  width: 80px;
+  height: 80px;
   position: absolute;
   top: 0;
   right: 0;
-  .indent;
   border: none;
-  width: 80px;
-  height: 80px;
   background: url("../img/icon-menu-open.svg") no-repeat center center;
 }
 
@@ -27,5 +26,4 @@
   //top: 100%;
   //right: 0;
   //left: 0;
-  display: block;
 }

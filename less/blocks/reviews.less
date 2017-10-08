@@ -1,5 +1,4 @@
 .reviews {
-  .marg;
   display: flex;
   flex-direction: column;
   margin-bottom: 35px;
@@ -14,16 +13,14 @@
 }
 
 .reviews__item {
-  .indent;
-  margin-bottom: 32px;
+  margin: 0 0 32px;
   font-size: 15px;
   line-height: 30px;
   color: @darkgrey;
 }
 
 .reviews__author {
-  .indent;
-  margin-bottom: 11px;
+  margin: 0 0 11px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -31,35 +28,33 @@
 }
 
 .reviews__mail {
-  .indent;
   font-size: 17px;
   line-height: 30px;
   color: @darkgrey;
 }
 
 .reviews__nav {
+  display: flex;
   margin-bottom: 38px;
   text-align: center;
-  display: flex;
 }
 
 .reviews__btn {
+  position: relative;
+  padding: 0px;
   width: 50%;
   height: 52px;
   background-color: @white;
   background-repeat: no-repeat;
   background-position: center center;
+  border: 1px solid @lightgreyborder;
 }
 
 .reviews__btn--prev {
-  border-top: 1px solid @lightgreyborder;
-  border-left: 1px solid @lightgreyborder;
-  border-bottom: 1px solid @lightgreyborder;
-  border-right: none;
   background-image: url("../img/icon-left-arrow.svg");
 }
 
 .reviews__btn--next {
-  border: 1px solid @lightgreyborder;
+  margin-left: -1px;
   background-image: url("../img/icon-right-arrow.svg");
 }

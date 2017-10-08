@@ -7,25 +7,28 @@
 .form__field {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid @lightgreen;
   position: relative;
-  padding-top: 24px;
   margin-bottom: 40px;
 }
 
 .form__field-title {
-  .indent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-right: 26px;
-  transform: translateY(-9px);
+  display: flex;
+  align-items: center;
+  margin: 0 0 18px;
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
   color: @lightgreen;
   text-transform: uppercase;
   background-color: rgb(255, 255, 255);
+  &::after {
+    display: block;
+    content: "";
+    margin: 0 0 0 26px;
+    border-top: 1px solid @lightgreen;
+    flex-grow: 1;
+  }
+  ;
 }
 
 .form__wrapper {
@@ -41,31 +44,33 @@
 }
 
 .form__input {
+  width: 100%;
   font-size: 17px;
   line-height: 18px;
-  width: 100%;
 }
+
 .form__textarea {
   width: 100%;
   resize: none;
 }
+
 .form__placeholder {
+  display: block;
   position: absolute;
   bottom: 3px;
   left: 0;
-  display: block;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
   color: rgb(199, 199, 199);
 }
+
 .form__placeholder--textarea {
-    top: 3px;
+  top: 3px;
 }
 
 .form__remark {
-  .indent;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
   font-size: 14px;
   line-height: 16px;
   color: @darkgrey;
