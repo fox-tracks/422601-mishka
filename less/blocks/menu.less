@@ -12,3 +12,59 @@
   background-color: @white;
   border-bottom: 1px solid @lightgreyborder;
 }
+
+.menu__list--spec {
+  display: none;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.menu__additional-info {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .menu__list--main {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+  }
+  .menu__list--user {
+    order: 1;
+      flex-basis: 50%;
+    align-self: flex-end;
+    display: flex;
+
+  }
+
+  .menu__additional-info {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding-right: 50px;
+  }
+
+  .menu__link {
+    background-color: transparent;
+    border: none;
+
+  }
+  .menu__link--icon-cart {
+    padding-right: 50px;
+    font-size: 17px;
+  }
+
+  .menu__link--icon-search {
+    font-size: 0;
+
+  }
+
+  .menu__link--main {
+    padding-left: 50px;
+  }
+}

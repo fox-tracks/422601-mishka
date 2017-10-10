@@ -216,14 +216,15 @@
       <header class="page-header">
         <div class="page-header__container">
           <a class="logo">
-          <img class="logo__image" src="img/logo-mobile@1x.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+            <img class="logo__image" src="img/logo-mobile@1x.svg" width="86" height="35" alt="Интернет-магазин Мишка">
           </a>
         </div>
-        <button class="page-header__humburger-btn"></button>
+        <input type="checkbox" name="page-header__btn" id="page-header__btn" class="page-header__humburger-toggle">
+        <label for="page-header__btn" class="page-header__humburger-label"></label>
         <nav class="page-header__menu menu">
           <ul class="menu__list menu__list--main">
             <li class="menu__item">
-              <a href="#" class="menu__link">Каталог товаров</a>
+              <a href="#" class="menu__link menu__link--main">Каталог товаров</a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Вязание на заказ</a>
@@ -237,6 +238,15 @@
               <a href="#" class="menu__link menu__link--icon-cart">Корзина: пока пуста</a>
             </li>
           </ul>
+          <ul class="menu__list menu__list--spec">
+            <li class="menu__item">
+              <a href="#" class="menu__link--spec">Новые поступления</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link--spec">Распродажа</a>
+            </li>
+          </ul>
+          <p class="menu__additional-info">Бесплатная доставка по России</p>
         </nav>
       </header>
       <main class="page-content">
