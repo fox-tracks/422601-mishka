@@ -11,14 +11,21 @@
 }
 
 .categories__item {
+
   &--interior {
     color: inherit;
     background-color: @lightgreen;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: right 37px center;
   }
 
   &--toys {
     color: inherit;
     background-color: @darkgreen;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: right 27px center;
   }
 }
 
@@ -35,7 +42,7 @@
 
 @media (min-width: @tablet-width) {
   .categories {
-    margin-top: -116px;
+    margin-top: -117px;
     padding: 0 50px;
     font-size: 20px;
     line-height: 30px;
@@ -45,5 +52,13 @@
   }
   .categories__item {
     flex-basis: 50%;
+  }
+  .categories__link {
+    padding: 29px 37px;
+  }
+  .categories__item {
+    &--toys {
+      background-position: right 34px center;
+    }
   }
 }
