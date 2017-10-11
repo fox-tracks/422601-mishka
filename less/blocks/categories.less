@@ -32,3 +32,18 @@
   display: inline-block;
   width: 114px;
 }
+
+@media (min-width: @tablet-width) {
+  .categories {
+    margin-top: -116px;
+    padding: 0 50px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .categories__list {
+    display: flex;
+  }
+  .categories__item {
+    flex-basis: 50%;
+  }
+}

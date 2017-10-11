@@ -1,6 +1,7 @@
 .page-title {
   background-color: @grayback;
   margin-bottom: 30px;
+  border-top: 1px solid @lightgreyborder;
 
   &--with-image {
     min-height: 282px;
@@ -20,4 +21,18 @@
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    min-height: 744px;
+    background-size: cover;
+    background-position: center 0;
+    margin-top: -66px;
+  }
+  .page-title__text {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 143px;
+  }
 }

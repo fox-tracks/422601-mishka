@@ -1,8 +1,6 @@
 .page-header {
   position: relative;
-  border: 1px solid @lightgreyborder;
-  border-right: 0;
-  border-left: 0;
+  border-top: 1px solid @lightgreyborder;
 }
 
 .page-header__container {
@@ -46,9 +44,6 @@
   }
 
   .page-header__menu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     position: static;
   }
 
@@ -57,5 +52,13 @@
     top: 0;
     left: 0;
     padding-left: 50px;
+  }
+}
+@media (min-width: @desc-width) {
+  .page-header__container {
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
   }
 }
