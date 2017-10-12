@@ -21,7 +21,6 @@
   line-height: 20px;
   color: @black;
 
-
   &::before {
     display: block;
     content: "";
@@ -80,7 +79,7 @@
 
 @media (min-width: @tablet-width) {
   .features {
-    height: 665px;
+    min-height: 640px;
     margin-bottom: 20px;
   }
   .features__title {
@@ -91,25 +90,41 @@
   }
   .features__list {
     display: flex;
-    flex-direction: column;
     align-content: flex-start;
     flex-wrap: wrap;
   }
   .features__item {
-    width: 299px;
+    width: 50%;
     padding: 57px 0;
-    margin-right: 35px;
     font-size: 20px;
     line-height: 22px;
+
+    &--eco {
+      order: 0;
+    }
+    &--handmaid {
+      order: 0;
+    }
+    &--money {
+      order: 1;
+    }
+    &--rus {
+      order: 1;
+    }
+    &--likes {
+      order: 2;
+    }
+    &--pack {
+      order: 2;
+    }
   }
 }
+
 @media (min-width:@desc-width) {
   .features {
-    //height: 665px;
-    margin: 0 100px 20px;
-    padding: 0 175px;
-
-    margin-bottom: 30px;
+    width: 700px; 
+    min-height: 635px;
+    margin: 0 auto 30px;
   }
   .features__title {
     font-size: 53px;
@@ -117,8 +132,7 @@
     padding-top: 64px;
   }
   .features__item {
-    margin-right: 51px;
-    //padding: 57px 0;
+    padding: 57px 0;
   }
 }
 
