@@ -1,7 +1,6 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
   margin-bottom: 40px;
   padding-top: 43px;
 }
@@ -28,4 +27,59 @@
 
 .contacts__value {
   flex-basis: 60%;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding-top: 65px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: right 50px top 45px;
+  }
+  .contacts__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 52px;
+    width: 100%;
+  }
+  .contacts__wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts__block {
+    width: 50%;
+    font-size: 17px;
+  }
+  .contacts__label {
+    flex-basis: 23%;
+  }
+  
+  .contacts__value {
+    flex-basis: 77%;
+  }
+}
+@media (min-width: @desc-width) {
+  .contacts {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+    padding-top: 74px;
+    flex-direction: column;
+    background-position: left 64px top 135px;
+  }
+  .contacts__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 175px;
+    padding-right: 525px;
+  }
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
