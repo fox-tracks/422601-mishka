@@ -28,7 +28,7 @@
     position: absolute;
     background-repeat: no-repeat;
   }
-  
+
   &--eco::before {
     background-image: url("../img/icon-feature-flower.svg");
     top: 0;
@@ -92,11 +92,13 @@
   .features__list {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     flex-wrap: wrap;
   }
   .features__item {
-    max-width: 300px;
+    width: 299px;
     padding: 57px 0;
+    margin-right: 35px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -104,16 +106,20 @@
 @media (min-width:@desc-width) {
   .features {
     //height: 665px;
+    margin: 0 100px 20px;
+    padding: 0 175px;
+
     margin-bottom: 30px;
   }
   .features__title {
     font-size: 53px;
     line-height: 57px;
-    //padding-top: 70px;
-    //margin-bottom: 40px;
+    padding-top: 64px;
   }
   .features__item {
-    //max-width: 300px;
+    margin-right: 51px;
     //padding: 57px 0;
   }
 }
+
+
