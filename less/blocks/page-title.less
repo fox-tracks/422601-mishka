@@ -13,6 +13,7 @@
 }
 
 .page-title__text {
+  min-width: 260px;
   margin: 0 30px;
   padding-top: 73px;
   padding-bottom: 73px;
@@ -21,6 +22,7 @@
   line-height: 30px;
   text-align: center;
   box-sizing: content-box;
+
   &--with-image {
     min-height: 138px;
   }
@@ -28,14 +30,16 @@
 
 @media (min-width: @tablet-width) {
   .page-title {
+    margin-top: -66px;
     background-image: url("../img/hero-desktop.jpg");
     background-position: center 0;
-    margin-top: -66px;
+
   }
   .page-title__text {
+    padding-top: 143px;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 143px;
+
     &--with-image {
       min-height: 470px;
       padding-bottom: 118px;

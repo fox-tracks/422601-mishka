@@ -38,22 +38,25 @@
 
 @media (min-width: @tablet-width) {
   .product {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
   }
+
   .product__title {
-    margin: 0 0 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 0 55px;
   }
+
   .product__tag {
     display: inline;
     max-width: 72px;
     margin: 0 28px 0 0;
     text-align: center;
   }
+
   .product__descr {
     min-width: 668px;
     margin-bottom: 37px;
@@ -61,67 +64,77 @@
     font-size: 17px;
     line-height: 30px;
   }
+
   .product__param {
+    min-width: 290px;
     margin-right: 378px;
     margin-bottom: 55px;
-    min-width: 290px;
   }
+
   .product__price {
-    padding-right: 378px;
     min-width: 668px;
     margin: 0 0 33px;
+    padding-right: 378px;
   }
+
   .product__btn {
     margin-right: 378px;
   }
+
   .product__image-container {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
-    width: 50%;
     display: flex;
     align-items: flex-end;
+    width: 50%;
   }
+
   .product__image {
-    height: ~"calc(100% - 105px)";
     width: 100%;
+    height: ~"calc(100% - 105px)";
+    object-fit: cover;
   }
 }
-@media (min-width: @desc-width) {
+@media (min-width: @desk-width) {
   .product__title {
-    margin: 58px 0 47px;
     justify-content: flex-start;
     align-items: center;
+    margin: 58px 0 47px;
     z-index: 1;
   }
+
   .product__tag {
     order: -1;
     display: inline;
     max-width: 172px;
+    margin: 0;
     padding: 0 53px 0 46px;
     text-align: center;
-    margin: 0;
   }
+
   .product__descr {
     min-width: 1050px;
     padding: 0 575px 0 175px;
     margin-bottom: 55px;
   }
+
   .product__param {
-    margin: 0 575px 110px 175px;
     min-width: 290px;
+    margin: 0 575px 110px 175px;
   }
 
   .product__price {
-    padding: 0 575px 0 175px;
     min-width: 1050px;
+    padding: 0 575px 0 175px;
   }
+
   .product__btn {
     margin: 0 575px 0 175px;
   }
+
   .product__image {
     height: 100%;
-    width: 100%;
   }
 }
