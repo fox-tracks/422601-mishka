@@ -1,7 +1,9 @@
 .page-footer {
   background-color: @grayback;
 }
-
+.page-footer__logo {
+  display: none;
+}
 .page-footer__author-link {
   display: block;
   padding: 23px 30px;
@@ -14,4 +16,22 @@
 
 .page-footer__author-icon {
   fill: @lightgreen;
+}
+@media (min-width: @tablet-width) {
+  .page-footer {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer__logo {
+    display: inline;
+    vertical-align: middle;
+    flex-basis: ~"calc(0.33 * (100% - 100px))";
+  }
+  .page-footer__author-link {
+    border: none;
+    padding: 23px 0;
+    flex-basis: ~"calc(0.33 * (100% - 100px))";
+  }
 }
