@@ -5,21 +5,24 @@
   display: none;
 }
 .page-footer__author-link {
-  display: block;
-  padding: 23px 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 23px 0;
+  margin: 0 30px;
   font-size: 19px;
   font-weight: 700;
   line-height: 19px;
   border-top: 1px solid @lightgreyborder;
-  text-align: center;
 }
 
 .page-footer__author-icon {
+  margin-left: 30px;
   fill: @lightgreen;
 }
 @media (min-width: @tablet-width) {
   .page-footer {
-    padding: 20px 50px;
+    padding: 31px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +35,12 @@
   .page-footer__author-link {
     border: none;
     padding: 23px 0;
+    margin: 0;
     flex-basis: ~"calc(0.33 * (100% - 100px))";
+  }
+}
+@media (min-width: @desc-width) {
+  .page-footer {
+    padding: 31px 100px;
   }
 }

@@ -15,7 +15,7 @@
 .contacts__block {
   display: flex;
   width: 100%;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
   font-size: 15px;
   line-height: 30px;
   color: @darkgrey;
@@ -61,25 +61,41 @@
   .contacts__value {
     flex-basis: 77%;
   }
+  .contacts__btn {
+    align-self: center;
+  }
 }
 @media (min-width: @desc-width) {
   .contacts {
     position: relative;
     width: 1050px;
-    margin: 0 auto;
+    margin: 0 auto 106px;
     padding-top: 74px;
-    flex-direction: column;
     background-position: left 64px top 135px;
   }
   .contacts__wrap {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-left: 175px;
-    padding-right: 525px;
+    margin-bottom: 50px;
+    padding: 64px 575px 0 175px;
   }
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
   }
+  .contacts__block {
+    width: 100%;
+  }
+  .contacts__label {
+    flex-basis: 26%;
+  }
+  .contacts__value {
+    flex-basis: 74%;
+  }
+  .contacts__btn {
+    align-self: flex-start;
+    margin-left: 175px;
+  }
+  
 }
