@@ -23,6 +23,31 @@
   line-height: 24px;
   background-color: @white;
   border-bottom: 1px solid @lightgreyborder;
+  color: @black;
+  outline: none;
+
+  &:focus{
+    color: @blackhov;
+  }
+
+  &:focus .menu__pic {
+    fill: @lightgreen;
+  }
+
+  &:hover {
+    color: @blackhov;
+  }
+
+  &:hover .menu__pic {
+    fill: @lightgreen;
+  }
+  &:active {
+    color: @blackact;
+  }
+
+  &:active .menu__pic {
+    fill: @transpgreen;
+  }
 }
 
 .menu__pic {
@@ -137,7 +162,7 @@
       margin-right: 30px;
       font-size: 17px;
     }
-    
+
     &--spec {
       display: block;
       margin-right: 30px;

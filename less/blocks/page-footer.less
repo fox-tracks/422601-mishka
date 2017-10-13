@@ -35,6 +35,19 @@
     display: inline;
     vertical-align: middle;
     flex-basis: ~"calc(0.33 * (100% - 100px))";
+    fill: @black;
+
+    &:focus {
+      fill: @lightgreen;
+    }
+
+    &:hover {
+      fill: @lightgreen;
+    }
+
+    &:active {
+      fill: @transpgreen;
+    }
   }
 
   .page-footer__author-link {
@@ -43,6 +56,24 @@
     margin: 0;
     padding: 23px 0;
     border: none;
+    color: @black;
+    outline: none;
+
+    &:focus .page-footer__author-icon {
+      fill: rgb(70, 193, 194);
+    }
+
+    &:hover .page-footer__author-icon {
+      fill: rgb(70, 193, 194);
+    }
+
+    &:active {
+      color: rgb(168, 168, 168);
+    }
+
+    &:active .page-footer__author-icon {
+      fill: rgb(189, 227, 211);
+    }
   }
 }
 
