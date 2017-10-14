@@ -66,4 +66,37 @@
   .video-block__descr-wrap {
     padding-top: 0;
   }
+  .video-block__descr {
+    font-size: 15px;
+    line-height: 30px;
+
+  }
+  .video-block__title {
+    font-size: 20px;
+  }
+}
+@media (min-width: @desk-width) {
+  .video-block {
+    display: block;
+    position: relative;
+    min-height: 457px;
+    padding: 0 0 0 680px;
+  }
+  .video-block__title {
+    padding: 96px 56px 35px 80px;
+    background-position: left 80px top 47px;
+  }
+  .video-block__descr-wrap {
+    padding: 0 34px 60px 80px;
+  }
+  .video-block__descr {
+    margin-bottom: 48px;
+  }
+  .video-block__player {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 680px;
+  }
 }
