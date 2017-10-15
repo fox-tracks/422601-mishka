@@ -122,12 +122,12 @@
         />
       </symbol>
     </svg>
-    <div class="page-wrapper">
-      <header class="page-header">
+    <header class="page-header">
+      <div class="wrapper">
         <div class="page-header__container">
           <a class="logo">
-              <img class="logo__image" src="img/logo-mobile@1x.svg" width="86" height="35" alt="Интернет-магазин Мишка">
-            </a>
+                <img class="logo__image" src="img/logo-mobile@1x.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+              </a>
         </div>
         <input type="checkbox" name="page-header__btn" id="page-header__btn" class="page-header__humburger-toggle">
         <label for="page-header__btn" class="page-header__humburger-label"></label>
@@ -166,104 +166,115 @@
           </ul>
           <p class="menu__additional-info">Бесплатная доставка по России</p>
         </nav>
-      </header>
-      <main class="page-content">
-        <div class="page-title section">
-          <h1 class="page-title__text">Вязание на заказ</h1>
-        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <div class="page-title section">
+        <h1 class="page-title__text">Вязание на заказ</h1>
+      </div>
+      <div class="wrapper">
         <p class="form-introduction">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
           детали.
         </p>
-        <form action="https://echo.htmlacademy.ru" method="post" class="form section section--with-marg">
-          <div class="form__field">
-            <p class="form__field-title">Тип</p>
+        <form action="https://echo.htmlacademy.ru" method="post" class="form section">
+          <div class="form__field form__field--type">
+            <p class="form__field-title form__field-title--type">Тип</p>
             <div class="form__wrapper">
               <input type="radio" name="item-type" id="item-type-interior" value="interior" class="form__radio" checked>
-              <label for="item-type-interior" class="form__label">Аксессуар для  интерьера</label>
+              <label for="item-type-interior" class="form__label form__label--type">Аксессуар для  интерьера</label>
             </div>
             <div class="form__wrapper">
               <input type="radio" name="item-type" id="item-type-toys" value="toys" class="form__radio">
-              <label for="item-type-toys" class="form__label">Детская игрушка</label>
+              <label for="item-type-toys" class="form__label form__label--type">Детская игрушка</label>
             </div>
           </div>
-          <div class="form__field">
-            <p class="form__field-title">Цвет</p>
+          <div class="form__field form__field--color">
+            <p class="form__field-title form__field-title--color">Цвет</p>
             <div class="form__wrapper">
               <input type="checkbox" name="item-color" id="item-color-white" value="white" class="form__checkbox" checked>
-              <label for="item-color-white" class="form__label">Белый</label>
+              <label for="item-color-white" class="form__label form__label--color">Белый</label>
             </div>
             <div class="form__wrapper">
               <input type="checkbox" name="item-color" id="item-color-grey" value="grey" class="form__checkbox" checked>
-              <label for="item-color-grey" class="form__label">Серый</label>
+              <label for="item-color-grey" class="form__label form__label--color">Серый</label>
             </div>
             <div class="form__wrapper">
               <input type="checkbox" name="item-color" id="item-color-tiffany" value="tiffany" class="form__checkbox">
-              <label for="item-color-tiffany" class="form__label">«Тиффани»</label>
+              <label for="item-color-tiffany" class="form__label form__label--color">«Тиффани»</label>
             </div>
             <div class="form__wrapper">
               <input type="checkbox" name="item-color" id="item-color-black" value="black" class="form__checkbox">
-              <label for="item-color-black" class="form__label">Черный</label>
+              <label for="item-color-black" class="form__label form__label--color">Черный</label>
             </div>
             <div class="form__wrapper">
               <input type="checkbox" name="item-color" id="item-color-pink" value="pink" class="form__checkbox">
-              <label for="item-color-pink" class="form__label">Розовый</label>
+              <label for="item-color-pink" class="form__label form__label--color">Розовый</label>
             </div>
             <div class="form__wrapper">
               <input type="checkbox" name="item-color" id="item-color-orange" value="orange" class="form__checkbox">
-              <label for="item-color-orange" class="form__label">Оранжевый</label>
+              <label for="item-color-orange" class="form__label form__label--color">Оранжевый</label>
             </div>
           </div>
-          <div class="form__field">
-            <p class="form__field-title">Фио</p>
-            <label for="user-name" class="form__label">Имя:
+          <div class="form__field form__field--name">
+            <p class="form__field-title form__field-title--name">Фио</p>
+            <label for="user-name">
+              <span class="form__label form__label--name">Имя:</span>
               <input type="text" name="user-name" id="user-name" class="form__input" required>
               <span class="form__placeholder">Введите ваше имя*</span>
             </label>
-            <label for="user-surname" class="form__label">Фамилия:
+            <label for="user-surname">
+            <span class="form__label form__label--name">Фамилия:</span>
               <input type="text" name="user-surname" id="user-surname" class="form__input" required>
               <span class="form__placeholder">Укажите фамилию*</span>
             </label>
-            <label for="user-patronymic" class="form__label">Отчество:
+            <label for="user-patronymic">
+            <span class="form__label form__label--name">Отчество:</span>
               <input type="text" name="user-patronymic" id="user-patronymic" class="form__input">
               <span class="form__placeholder">Отчество, если желаете</span>
             </label>
           </div>
           <div class="form__field-wrapper">
-            <div class="form__field">
-              <p class="form__field-title">Тел</p>
-              <label class="form__label">
+            <div class="form__field form__field--tel">
+              <p class="form__field-title form__field-title--tel">Тел</p>
+              <label>
                 <input type="tel" name="user-tel" pattern="[+]7 [0-9]{3} [0-9]{2} [0-9]{2}" class="form__input form__input--tel"
                   required>
                 <span class="form__placeholder">+7 ХХХ ХХ ХХ*</span>
               </label>
             </div>
-            <div class="form__field">
-              <p class="form__field-title">E-mail</p>
-              <label class="form__label">
+            <div class="form__field form__field--email">
+              <p class="form__field-title form__field-title--email">E-mail</p>
+              <label>
                 <input type="email" name="user-email" class="form__input form__input--email" required>
                 <span class="form__placeholder">Ваш Email*</span>
               </label>
             </div>
           </div>
-          <div class="form__field">
-            <p class="form__field-title">Доп</p>
-            <label class="form__label">
-              <textarea name="user-additional-info" rows="10"
-          cols="50" class="form__textarea"></textarea>
+          <div class="form__field form__field--textarea">
+            <p class="form__field-title form__field-title--textarea">Доп</p>
+            <label>
+              <textarea name="user-additional-info" rows="10" cols="50" class="form__textarea"></textarea>
             <span class="form__placeholder form__placeholder--textarea">Опишите все ваши  пожелания к заказу</span>
             </label>
           </div>
           <p class="form__remark">*Поля обязательны для заполнения</p>
           <button class="btn">Отправить заказ</button>
         </form>
-      </main>
-      <footer class="page-footer section">
-        <section class="social ">
+      </div>
+    </main>
+    <footer class="page-footer section">
+      <div class="wrapper page-footer__wrap">
+        <a class="page-footer__logo">Интернет-магазин Мишка
+              <svg width="101.615" height="34.056" class="page-footer__logo-img">
+                  <use xlink:href="#logo-footer"></use>
+              </svg>
+            </a>
+        <section class="social">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social__list">
             <li class="social__item">
               <a href="instagram.com" class="social__link">
-                <svg width="21.769" height="21.334">
+                <svg width="21.769" height="21.334" class="social__img">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
                 Инстаграм
@@ -271,7 +282,7 @@
             </li>
             <li class="social__item">
               <a href="https://www.facebook.com/" class="social__link">
-                <svg width="14.962" height="27.718">
+                <svg width="14.962" height="27.718" class="social__img">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
                 Фейсбук
@@ -279,7 +290,7 @@
             </li>
             <li class="social__item">
               <a href="https://twitter.com" class="social__link">
-                <svg width="23.494" height="20.168">
+                <svg width="23.494" height="20.168" class="social__img">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
                 Твиттер
@@ -288,11 +299,11 @@
           </ul>
         </section>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__author-link">Разработано
-            <svg width="26.943" height="34.09" class="page-footer__author-icon">
-              <use xlink:href="#logo-htmlacademy"></use>
-            </svg>
-          </a>
-      </footer>
-    </div>
+          <svg width="26.943" height="34.09" class="page-footer__author-icon">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
