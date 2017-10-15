@@ -65,15 +65,20 @@
   .categories__item {
     flex-basis: 50%;
   }
-  .categories__item {
-    &--toys {
-      background-position: right 34px center;
-    }
+  .categories__text {
+    padding-right: 167px;
   }
 }
 
+
 @media (min-width: @desk-width) {
   .categories {
-    margin: -118px 0 73px;
+    margin: -117px auto 73px;
+    width: 1050px;
+  }
+  .categories__text {
+    padding-right: 350px;
+    width: auto;
+    margin: 0 37px;
   }
 }
