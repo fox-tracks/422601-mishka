@@ -1,7 +1,6 @@
 .menu__list {
   .list;
   &--spec {
-    display: none;
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
@@ -9,7 +8,6 @@
 }
 
 .menu__additional-info {
-  display: none;
   font-size: 15px;
   line-height: 24px;
 }
@@ -61,6 +59,18 @@
   &--cart {
     top: 30px;
     left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .menu__additional-info {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 
@@ -130,7 +140,20 @@
     }
   }
 }
-
+@media (max-width: 1149px) {
+  .menu__list {
+    &--spec{
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+}
 @media (min-width: @desk-width) {
   .menu {
     padding: 0 100px;
