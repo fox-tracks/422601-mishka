@@ -15,29 +15,40 @@
   &--interior {
     color: inherit;
     background-color: @lightgreen;
-    background-image: url("../img/icon-interior.svg");
-    background-repeat: no-repeat;
-    background-position: right 37px center;
   }
 
   &--toys {
     color: inherit;
     background-color: @darkgreen;
-    background-image: url("../img/icon-toy.svg");
-    background-repeat: no-repeat;
-    background-position: right 27px center;
   }
 }
 
 .categories__link {
   display: block;
-  padding: 28px 30px 29px;
   color: inherit;
 }
 
 .categories__text {
-  display: inline-block;
-  width: 114px;
+  padding: 28px 116px 29px 0;
+  position: relative;
+  &::after {
+    display: block;
+    content: "";
+    width: 116px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &--interior::after {
+    background-image: url("../img/icon-interior.svg");
+  }
+
+  &--toys::after {
+    background-image: url("../img/icon-toy.svg");
+  }
 }
 
 @media (min-width: @tablet-width) {
