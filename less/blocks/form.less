@@ -150,3 +150,19 @@
   line-height: 16px;
   color: @darkgrey;
 }
+@media (min-width: @tablet-width) {
+  .form__field {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .form__field-title {
+    width: 25%;
+    &::after {
+      display: none;
+    }
+  }
+  .form__wrapper {
+    width: 75%;
+  }
+}
