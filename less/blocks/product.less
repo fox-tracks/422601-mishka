@@ -95,12 +95,13 @@
   .product__image {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     height: 100%;
     width: auto;
     max-width: auto;
+    transform: translateX(-50%);
   }
 }
+
 @media (min-width: @desk-width) {
   .product__title {
     justify-content: flex-start;
@@ -120,8 +121,8 @@
 
   .product__descr {
     min-width: 1050px;
-    padding: 0 575px 0 175px;
     margin-bottom: 55px;
+    padding: 0 575px 0 175px;
   }
 
   .product__param {
@@ -137,10 +138,12 @@
   .product__btn {
     margin: 0 575px 0 175px;
   }
+
   .product__image-container {
     top: 0;
     z-index: -1;
   }
+
   .product__image {
     height: 100%;
   }
