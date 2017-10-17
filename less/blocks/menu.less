@@ -1,5 +1,6 @@
 .menu {
   margin: 0 -30px;
+  position: relative;
 }
 
 .menu__list {
@@ -79,6 +80,7 @@
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+    z-index: 1;
   }
 }
 
@@ -95,6 +97,7 @@
       display: flex;
       order: 2;
       max-width: 50%;
+      z-index: 1;
     }
 
     &--user {

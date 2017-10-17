@@ -29,6 +29,21 @@
   flex-basis: 60%;
 }
 
+.contacts__text {
+  display: inline-block;
+  border-bottom: 1px solid rgb(98, 209, 186);
+
+  &:hover {
+    color: rgb(70, 193, 174);
+    border-color: rgb(70, 193, 174);
+  }
+
+  &:active {
+    color: rgb(211, 237, 232);
+    border-color: rgb(236, 249, 247);
+  }
+}
+
 @media (min-width: @tablet-width) {
   .contacts__wrap {
     display: flex;

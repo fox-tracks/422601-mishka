@@ -83,6 +83,7 @@
 
 .form__elem-wrapper {
   position: relative;
+  z-index: 1;
 }
 
 .form__elem-pic {
@@ -90,6 +91,7 @@
   fill: rgb(204, 204, 204);
   top: 50%;
   transform: translateY(-50%);
+  z-index: -1;
 
   &--tel {
     right: 8px;
@@ -112,11 +114,25 @@
   margin: 0;
   width: 100%;
   height: 52px;
+  font-family: "Opensans", "Tahoma", sans-serif;
   font-size: 17px;
   line-height: 18px;
   border: none;
   border-bottom: 2px solid @black;
   background-color: transparent;
+  outline: none;
+
+  &:hover {
+    border-color: rgb(98, 209, 186);
+  }
+
+  &:hover ~ .form__elem-pic {
+    fill: rgb(98, 209, 186);
+  }
+
+  &::placeholder {
+    color: rgb(210, 210, 210);
+  }
 }
 
 .form__input-wrap {
@@ -126,9 +142,20 @@
 
 .form__textarea {
   width: 100%;
+  padding: 8px 10px;
   resize: none;
+  font-family: "Opensans", "Tahoma", sans-serif;
   border: 2px solid @black;
   background-color: transparent;
+  outline: none;
+
+  &:hover {
+    border-color: rgb(98, 209, 186);
+  }
+
+  &::placeholder {
+    color: rgb(210, 210, 210);
+  }
 }
 
 .form__label {
@@ -243,6 +270,14 @@
     align-items: baseline;
   }
 
+  .form__input {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .form__textarea {
+    font-size: 19px;
+    line-height: 19px;
+  }
   .form__remark {
     max-width: 50%;
     order: 1;
@@ -256,13 +291,35 @@
   .form__label {
     font-size: 19px;
     line-height: 19px;
+    padding: 17px 0 17px 81px;
+    margin-bottom: 24px;
 
+    &--type {
+      &::before {
+        .pseudo(@width: 52px, @height: 52px);
+      }
+
+      &::after {
+        .pseudo(15px, 15px, 22px, 22px, transparent);
+      }
+    }
+
+    &--color {
+      &::before {
+        .pseudo(@width: 54px, @height: 52px);
+      }
+
+      &::after {
+        .pseudo (16px, 11px, 33px, 22px, transparent);
+      }
+    }
     &--color {
       width: 48%;
     }
 
     &--name {
       margin-right: 25px;
+      padding-left: 0px;
     }
   }
 }
