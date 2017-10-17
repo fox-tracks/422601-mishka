@@ -1,10 +1,11 @@
 .page-title {
   background-color: @grayback;
   margin-bottom: 30px;
+  border-top: 1px solid @lightgreyborder;
 
   &--with-image {
-    min-height: 282px;
     margin-bottom: 0;
+    background-color: rgb(249, 249, 249);
     background-image: url("../img/hero-mobile.jpg");
     background-position: center -18px;
     background-repeat: no-repeat;
@@ -13,11 +14,60 @@
 }
 
 .page-title__text {
-  margin: 0 30px;
-  padding-top: 73px;
-  padding-bottom: 73px;
+  margin: 0;
+  padding: 73px 0;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+  box-sizing: content-box;
+
+  &--with-image {
+    min-height: 138px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    margin: -66px 0 82px;
+
+    &--with-image {
+      margin: -66px 0 0;
+      background-image: url("../img/hero-desktop.jpg");
+      background-position: center 0;
+    }
+  }
+
+  .page-title__text {
+    padding: 100px 0 75px;
+    font-size: 43px;
+    line-height: 50px;
+
+    &--with-image {
+      min-height: 470px;
+      padding: 143px 0 118px;
+    }
+  }
+}
+
+@media (min-width: @desk-width) {
+  .page-title {
+    margin: -66px 0 133px;
+
+    &--with-image {
+      margin: -66px 0 0;
+      background-image: url("../img/hero-desktop.jpg");
+      background-position: center 0;
+    }
+  }
+
+  .page-title__text {
+    padding: 100px 0 94px;
+    font-size: 53px;
+    line-height: 57px;
+
+    &--with-image {
+      padding: 155px 0 118px;
+    }
+  }
 }

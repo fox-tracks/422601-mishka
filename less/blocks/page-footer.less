@@ -2,16 +2,77 @@
   background-color: @grayback;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__author-link {
-  display: block;
-  padding: 23px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 0;
   font-size: 19px;
   font-weight: 700;
   line-height: 19px;
-  border-top: 1px solid @lightgreyborder;
-  text-align: center;
+  border-top: 1px solid rgb(229, 229, 229);
 }
 
 .page-footer__author-icon {
+  margin-left: 30px;
   fill: @lightgreen;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0;
+  }
+
+  .page-footer__logo {
+    display: inline;
+    flex-basis: ~"calc(0.33 * (100% - 100px))";
+    fill: @black;
+    font-size: 0;
+    vertical-align: middle;
+
+    &:focus {
+      fill: @lightgreen;
+    }
+
+    &:hover {
+      fill: @lightgreen;
+    }
+
+    &:active {
+      fill: @transpgreen;
+    }
+  }
+
+  .page-footer__author-link {
+    justify-content: flex-end;
+    flex-basis: ~"calc(0.33 * (100% - 100px))";
+    margin: 0;
+    padding: 23px 0;
+    border: none;
+    color: @black;
+    outline: none;
+
+    &:focus .page-footer__author-icon {
+      fill: rgb(70, 193, 194);
+    }
+
+    &:hover .page-footer__author-icon {
+      fill: rgb(70, 193, 194);
+    }
+
+    &:active {
+      color: rgb(168, 168, 168);
+    }
+
+    &:active .page-footer__author-icon {
+      fill: rgb(189, 227, 211);
+    }
+  }
 }

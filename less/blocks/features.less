@@ -14,9 +14,129 @@
 }
 
 .features__item {
+  position: relative;
   padding: 57px 0 28px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
   color: @black;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+  }
+
+  &--eco::before {
+    top: 0;
+    left: 8px;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--money::before {
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 28px;
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--likes::before {
+    top: 5px;
+    left: 7px;
+    width: 47px;
+    height: 28px;
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmaid::before {
+    top: 2px;
+    left: 3px;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--rus::before {
+    top: 2px;
+    left: -6px;
+    width: 55px;
+    height: 24px;
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--pack::before {
+    top: 0;
+    left: 3px;
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    min-height: 640px;
+    margin-bottom: 20px;
+  }
+
+  .features__title {
+    margin-bottom: 40px;
+    padding-top: 70px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .features__list {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 50%;
+    padding: 57px 0;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--money {
+      order: 1;
+    }
+
+    &--rus {
+      order: 1;
+    }
+
+    &--likes {
+      order: 2;
+    }
+
+    &--pack {
+      order: 2;
+    }
+  }
+}
+
+@media (min-width: @desk-width) {
+  .features {
+    min-height: 635px;
+    margin: 0;
+  }
+
+  .features__wrap {
+    padding: 0 175px;
+  }
+
+  .features__title {
+    padding-top: 64px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__item {
+    padding: 57px 0;
+  }
 }

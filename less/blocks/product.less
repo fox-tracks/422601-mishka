@@ -3,11 +3,12 @@
 }
 
 .product__title {
-  margin-bottom: 6px;
+  margin-bottom: 28px;
 }
 
 .product__tag {
-  .indent;
+  display: block;
+  margin-top: 6px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -17,12 +18,13 @@
 
 .product__descr {
   .text;
-  margin: 28px 0 20px;
+  margin: 0 0 20px;
   color: @darkgrey;
 }
 
 .product__param {
   width: 260px;
+  margin-bottom: 30px;
 }
 
 .product__price {
@@ -32,4 +34,117 @@
   line-height: 24px;
   text-align: center;
   color: @darkgrey;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 55px;
+  }
+
+  .product__tag {
+    display: inline;
+    max-width: 72px;
+    margin: 0 28px 0 0;
+    text-align: center;
+  }
+
+  .product__descr {
+    min-width: 668px;
+    margin-bottom: 37px;
+    padding-right: 378px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product__param {
+    min-width: 290px;
+    margin-right: 378px;
+    margin-bottom: 55px;
+  }
+
+  .product__price {
+    min-width: 668px;
+    margin: 0 0 33px;
+    padding-right: 378px;
+  }
+
+  .product__btn {
+    margin-right: 378px;
+  }
+
+  .product__image-container {
+    position: absolute;
+    top: 105px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .product__image {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    max-width: auto;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: @desk-width) {
+  .product__title {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 58px 0 47px;
+    z-index: 2;
+  }
+
+  .product__tag {
+    order: -1;
+    display: inline;
+    max-width: 172px;
+    margin: 0;
+    padding: 0 53px 0 46px;
+    text-align: center;
+  }
+
+  .product__descr {
+    min-width: 1050px;
+    margin-bottom: 55px;
+    padding: 0 575px 0 175px;
+  }
+
+  .product__param {
+    min-width: 290px;
+    margin: 0 575px 110px 175px;
+  }
+
+  .product__price {
+    min-width: 1050px;
+    padding: 0 575px 0 175px;
+  }
+
+  .product__btn {
+    margin: 0 575px 0 175px;
+  }
+
+  .product__image-container {
+    top: 0;
+    z-index: -1;
+  }
+
+  .product__image {
+    height: 100%;
+  }
 }

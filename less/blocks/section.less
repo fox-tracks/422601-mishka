@@ -1,14 +1,20 @@
-.section {
-  margin: 0;
-}
-
-.section--with-marg {
-  padding: 0 30px;
-}
-
 .section__title {
   .indent;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .section__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .section__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

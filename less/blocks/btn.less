@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  padding: 16px 0;
+  padding: 14px 0;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
@@ -9,9 +9,20 @@
   text-align: center;
   background-color: transparent;
   border: 2px solid @darkgrey;
+  outline: none;
 
-  &--with-marg {
-    margin: 0 30px;
+  &:focus {
+    color: @white;
+    background-color: @darkgrey;
+  }
+
+  &:hover {
+    color: @white;
+    background-color: @darkgrey;
+  }
+
+  &:active {
+    color: rgb(124, 124, 124);
   }
 
   &--green {
@@ -20,5 +31,23 @@
     color: @white;
     border: none;
     background-color: @lightgreen;
+  }
+
+  &--green:focus {
+    background-color: @darkgreen;
+  }
+
+  &--green:hover {
+    background-color: @darkgreen;
+  }
+
+  &--green:active {
+    color: @transpgreen;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    padding: 16px 42px;
   }
 }

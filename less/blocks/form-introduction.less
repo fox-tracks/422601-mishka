@@ -1,7 +1,20 @@
 .form-introduction {
   margin-bottom: 54px;
-  padding: 0 30px;
   font-size: 13px;
   line-height: 24px;
   color: @darkgrey;
+}
+
+@media (min-width: @tablet-width) {
+  .form-introduction {
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desk-width) {
+  .form-introduction {
+    padding: 0 175px;
+  }
 }
