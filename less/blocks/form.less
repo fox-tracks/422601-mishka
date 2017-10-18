@@ -102,12 +102,13 @@
   }
 }
 
-.form__radio {
-  display: none;
-}
-
+.form__radio,
 .form__checkbox {
   display: none;
+
+  &:checked + .form__label::after {
+    display: block;
+  }
 }
 
 .form__input {
@@ -122,11 +123,13 @@
   background-color: transparent;
   outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: rgb(98, 209, 186);
   }
 
-  &:hover ~ .form__elem-pic {
+  &:hover ~ .form__elem-pic,
+  &:focus ~ .form__elem-pic {
     fill: rgb(98, 209, 186);
   }
 
@@ -149,7 +152,8 @@
   background-color: transparent;
   outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: rgb(98, 209, 186);
   }
 
@@ -167,6 +171,22 @@
   line-height: 18px;
   color: @black;
 
+  &:hover::before,
+  &:focus::before {
+    border-color: @lightgreen;
+  }
+
+  &:active::before {
+    border-color: rgb(202, 202, 202);
+  }
+
+  &::before {
+    display: block;
+  }
+
+  &::after {
+    display: none;
+  }
   &--type {
     &::before {
       .pseudo;
@@ -331,10 +351,14 @@
   }
 
   .form__elem-wrapper {
-    width: 83.33%;
+    flex-basis: 50%;
+    margin-right: 175px;
+    flex-grow: 1;
 
-    &--color {
+    &--color,
+    &--type {
       justify-content: flex-start;
+      margin-right: 0;
     }
   }
 
