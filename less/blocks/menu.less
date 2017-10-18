@@ -1,6 +1,5 @@
 .menu {
   margin: 0 -30px;
-  position: relative;
 }
 
 .menu__list {
@@ -30,19 +29,13 @@
   color: @black;
   outline: none;
 
+  &:hover,
   &:focus {
     color: @blackhov;
   }
 
+  &:hover .menu__pic,
   &:focus .menu__pic {
-    fill: @lightgreen;
-  }
-
-  &:hover {
-    color: @blackhov;
-  }
-
-  &:hover .menu__pic {
     fill: @lightgreen;
   }
 
@@ -121,19 +114,19 @@
     border: none;
 
     &--main {
-      padding: 20px 30px 20px 0;
+      padding: 15px 30px 15px 0;
       font-size: 15px;
     }
 
     &--icon-cart {
-      padding: 32px 0 32px 85px;
+      padding: 31px 0 31px 84px;
       font-size: 17px;
       border-left: 1px solid @lightgreyborder;
     }
 
     &--icon-search {
-      width: 83px;
-      padding: 32px 30px;
+      width: 82px;
+      padding: 33px 30px;
       font-size: 0;
       border-left: 1px solid @lightgreyborder;
     }
@@ -171,6 +164,7 @@
   .menu__list {
     &--main {
       order: 1;
+      padding-right: 104px;
     }
 
     &--user {
@@ -202,6 +196,15 @@
       display: block;
       margin-right: 30px;
       padding: 20px 0;
+      font-size: 15px;
+    }
+    &--catalog {
+      margin-right: 35px;
+    }
+
+    &--form {
+      padding-left: 36px;
+      border-left: 1px solid @lightgreyborder;
     }
   }
 }
