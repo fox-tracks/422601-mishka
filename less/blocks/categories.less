@@ -17,11 +17,13 @@
   &--interior {
     background-color: @lightgreen;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: rgb(89, 213, 188);
     }
 
-    &:hover .categories__pic {
+    &:hover .categories__pic,
+    &:focus .categories__pic {
       fill: rgb(41, 165, 146);
     }
 
@@ -37,11 +39,13 @@
   &--toys {
     background-color: @darkgreen;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: rgb(70, 193, 174);
     }
 
-    &:hover .categories__pic {
+    &:hover .categories__pic,
+    &:focus .categories__pic {
       fill: rgb(35, 159, 142);
     }
 
@@ -54,11 +58,13 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     margin-top: -5px;
   }
 
-  &:hover .categories__text {
+  &:hover .categories__text,
+  &:focus .categories__text {
     padding-bottom: 34px;
   }
 }
