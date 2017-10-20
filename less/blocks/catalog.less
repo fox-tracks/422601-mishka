@@ -7,14 +7,11 @@
 }
 
 .catalog__wrapper {
-  padding: 28px 28px 0;
+  padding: 26px 28px 0;
   border: 1px solid @lightgreyborder;
 
+  &:hover,
   &:focus {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -24,18 +21,15 @@
 }
 
 .catalog__item-title {
-  margin: 0 0 14px;
+  margin: 0 0 5px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .catalog__item-link {
+  &:hover,
   &:focus {
-    color: @blackhov;
-  }
-
-  &:hover {
     color: @blackhov;
   }
 
@@ -46,7 +40,7 @@
 
 .catalog__item-descr {
   margin: 0;
-  padding-bottom: 26px;
+  padding-bottom: 18px;
   font-size: 13px;
   line-height: 30px;
   color: @darkgrey;
@@ -60,6 +54,7 @@
 }
 
 .catalog__item-price {
+  margin-bottom: 8px;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
@@ -69,14 +64,11 @@
   display: block;
   width: 120px;
   height: 73px;
-  padding: 26px 0 26px 100px;
+  padding: 22px 0 30px 100px;
   font-size: 0;
 
+  &:hover .catalog__btn-pic,
   &:focus .catalog__btn-pic {
-    fill: @lightgreen;
-  }
-
-  &:hover .catalog__btn-pic {
     fill: @lightgreen;
   }
 
@@ -113,12 +105,13 @@
     width: 50%;
     min-height: 333px;
     margin: 0;
-    padding: 28px 28px 0;
+    padding: 25px 28px 0;
   }
 
   .catalog__item-title {
     margin: 0 0 5px;
     font-size: 17px;
+    letter-spacing: 2px;
   }
 
   .catalog__item-descr {
@@ -128,6 +121,11 @@
 
   .catalog__price-block {
     margin: auto 5px 0;
+  }
+
+  .catalog__item-price {
+    font-size: 17px;
+    margin-bottom: 4px;
   }
 
   .catalog__btn {
@@ -145,11 +143,16 @@
   .catalog__item {
     flex-direction: column;
     width: 30%;
-    margin: 0 5% 60px 0;
+    margin: 0 5% 56px 0;
 
     &:nth-of-type(3n) {
       margin-right: 0;
     }
+  }
+
+  .catalog__item-title {
+    font-size: 20px;
+    letter-spacing: 0;
   }
 
   .catalog__img-wrap {
@@ -157,8 +160,17 @@
     height: 463px;
   }
 
+  .catalog__price-block {
+    margin: auto 0 0;
+  }
+
   .catalog__wrapper {
     width: 100%;
-    min-height: 198px;
+    min-height: 195px;
+    padding: 22px 26px 0;
+  }
+
+  .catalog__btn {
+    height: 77px;
   }
 }

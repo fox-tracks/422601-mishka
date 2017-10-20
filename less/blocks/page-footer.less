@@ -10,15 +10,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 23px 0;
+  padding: 19px 0 24px;
   font-size: 19px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 34px;
   border-top: 1px solid rgb(229, 229, 229);
 }
 
 .page-footer__author-icon {
-  margin-left: 30px;
+  margin: 4px 2px 0 28px;
   fill: @lightgreen;
 }
 
@@ -37,11 +37,8 @@
     font-size: 0;
     vertical-align: middle;
 
+    &:hover,
     &:focus {
-      fill: @lightgreen;
-    }
-
-    &:hover {
       fill: @lightgreen;
     }
 
@@ -59,11 +56,8 @@
     color: @black;
     outline: none;
 
+    &:hover .page-footer__author-icon,
     &:focus .page-footer__author-icon {
-      fill: rgb(70, 193, 194);
-    }
-
-    &:hover .page-footer__author-icon {
       fill: rgb(70, 193, 194);
     }
 

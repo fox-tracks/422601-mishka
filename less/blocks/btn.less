@@ -4,6 +4,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+  letter-spacing: 1px;
   color: @darkgrey;
   text-transform: uppercase;
   text-align: center;
@@ -11,12 +12,8 @@
   border: 2px solid @darkgrey;
   outline: none;
 
+  &:hover,
   &:focus {
-    color: @white;
-    background-color: @darkgrey;
-  }
-
-  &:hover {
     color: @white;
     background-color: @darkgrey;
   }
@@ -48,6 +45,7 @@
 
 @media (min-width: @tablet-width) {
   .btn {
-    padding: 16px 42px;
+    padding: 14px 42px;
+    letter-spacing: 0;
   }
 }
