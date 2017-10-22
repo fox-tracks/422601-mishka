@@ -3,8 +3,10 @@
 }
 
 .page-header__container {
-  padding: 20px 0 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 86px;
 }
 
 .page-header__wrapper {
@@ -27,7 +29,8 @@
   }
 
   &:checked ~ .page-header__menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
     z-index: 1;
   }
 }
@@ -47,8 +50,13 @@
     display: none;
   }
 
-  .page-header__menu {
-    position: static;
+  .page-header__humburger-toggle {
+    & ~ .page-header__menu,
+    &:checked ~ .page-header__menu {
+      position: static;
+      flex-direction: row;
+      z-index: 1;
+    }
   }
 
   .page-header__container {
@@ -61,7 +69,7 @@
 
 @media (min-width: @desk-width) {
   .page-header__container {
-    top: 8px;
+    top:0;
     left: 50%;
     padding: 0;
     transform: translateX(-50%);
