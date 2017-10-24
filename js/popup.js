@@ -1,4 +1,5 @@
 var productBtn = document.querySelector(".product__btn");
+var catalogBtns = document.querySelectorAll(".catalog__btn");
 var popup = document.querySelector(".popup");
 var sizeS = popup.querySelector(".size-choice__btn--s");
 var sizeM = popup.querySelector(".size-choice__btn--m");
@@ -6,11 +7,18 @@ var sizeL = popup.querySelector(".size-choice__btn--l");
 var sizeChoice = popup.querySelector(".size-choice");
 var popupBlock = popup.querySelector(".popup__block");
 
-productBtn.addEventListener("click", function (evt) {
+function showPopup(evt) {
   evt.preventDefault();
   popup.classList.add("popup--shown");
-  sizeM.focus();
-});
+}
+
+if (productBtn != null) {
+  productBtn.addEventListener("click", showPopup);
+}
+
+for (var i = 0; i < catalogBtns.length; i++) {
+  catalogBtns[i].addEventListener("click", showPopup);
+}
 
 popup.addEventListener("click", function (evt) {
   if (evt.target == popup) {
@@ -30,12 +38,11 @@ function onSubmit(evt) {
 }
 
 sizeChoice.addEventListener("submit", onSubmit);
-sizeChoice.addEventListener("click", onSubmit);
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-        if (popup.classList.contains("popup--show")) {
-            popup.classList.remove("popup--show");
-        }
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("popup--shown")) {
+      popup.classList.remove("popup--shown");
     }
+  }
 });
 
