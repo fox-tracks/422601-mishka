@@ -9,7 +9,7 @@
       // Picture element HTML5 shiv
       document.createElement("picture");
     </script>
-    <script src="picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body class="page">
     <svg xmlns="http://www.w3.org/2000/svg" class="visually-hidden">
@@ -236,6 +236,9 @@
           </table>
           <div class="product__image-container">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" height="100%" alt="Вязаные корзинки">
@@ -348,15 +351,15 @@
             <div class="size-choice__btn-block">
               <label class="size-choice__label">
                 <input type="checkbox" name="size" class="size-choise__btn" checked>
-                <span class="size-choice__marker">S</span>
+                <span class="size-choice__marker size-choice__marker--s">S</span>
               </label>
               <label class="size-choice__label">
                 <input type="checkbox" name="size" class="size-choise__btn">
-                <span class="size-choice__marker">M</span>
+                <span class="size-choice__marker size-choice__marker--m">M</span>
               </label>
               <label class="size-choice__label">
                 <input type="checkbox" name="size" class="size-choise__btn">
-                <span class="size-choice__marker">L</span>
+                <span class="size-choice__marker size-choice__marker--l">L</span>
             </label>
             </div>
             <button class="btn btn--green">Добавить</button>
