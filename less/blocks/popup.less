@@ -1,3 +1,23 @@
+@keyframes popup__block--error {
+  0%,
+  100% {
+      transform: translate(-50%, -50%);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+      transform: translate(-55%, -50%);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+      transform: translate(-45%, -50%);
+  }
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -21,6 +41,10 @@
   background-color: @white;
   border: 1px solid rgb(199, 199, 199);
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  &--error {
+    animation: popup__block--error 0.6s;
+  }
 }
 
 .popup__wrap {
