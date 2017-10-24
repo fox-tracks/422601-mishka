@@ -13,12 +13,14 @@ productBtn.addEventListener("click", function (evt) {
 });
 
 popup.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("popup--shown");
+  if (evt.target == popup) {
+    evt.preventDefault();
+    popup.classList.remove("popup--shown");
+  }
 });
 
 function onSubmit(evt) {
-  if (!sizeS.checked || !sizeM.checked || !sizeL.checked) {
+  if (!sizeS.checked && !sizeM.checked && !sizeL.checked) {
     evt.preventDefault();
     popupBlock.classList.remove("popup__block--error");
     setTimeout(function () {
