@@ -19,6 +19,12 @@
   top: ~"calc(100% + 1px)";
   right: 0;
   left: 0;
+
+  &--shown {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
 }
 
 .page-header__humburger-toggle {
@@ -43,6 +49,10 @@
   height: 75px;
   background: url("../img/icon-menu-open.svg") no-repeat center center;
   cursor: pointer;
+
+  &--close {
+    background: url("../img/icon-menu-close.svg") no-repeat center center;
+  }
 }
 
 @media (min-width: @tablet-width) {
