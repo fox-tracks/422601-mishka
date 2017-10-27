@@ -51,7 +51,7 @@ gulp.task("html", function () {
 });
 
 gulp.task("scripts", function() {
-  return gulp.src("js/**/*.js")
+  return gulp.src("js/own/**/*.js")
     .pipe(concat("common.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(uglify())
@@ -88,6 +88,7 @@ gulp.task("serve", function () {
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
+    "js/vendor/**/*.js"
   ], {
     base: "."
   })
