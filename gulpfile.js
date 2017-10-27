@@ -72,7 +72,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("img/content-images/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("build/img/content-images"));
 });
 
 gulp.task("serve", function () {
@@ -88,7 +88,7 @@ gulp.task("serve", function () {
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "js/vendor/**/*.js"
+    "js/vendor/**/*.js",
   ], {
     base: "."
   })
