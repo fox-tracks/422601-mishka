@@ -53,7 +53,7 @@
   }
 
   &--color {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
   }
 
   &--name {
@@ -250,7 +250,7 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    margin-bottom: 39px;
+    margin-bottom: 38px;
   }
 
   .form__field-wrap {
@@ -258,7 +258,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding: 47px 0 0;
+    padding: 49px 0 0;
 
     &--color {
       padding-top: 50px;
@@ -287,15 +287,15 @@
 
   .form__field {
     &--type {
-      padding-bottom: 25px;
+      padding-bottom: 27px;
     }
 
     &--color {
-      padding-bottom: 24px;
+      padding-bottom: 28px;
     }
 
     &--name {
-      padding-bottom: 25px;
+      padding-bottom: 26px;
     }
 
     &--grey {
@@ -321,7 +321,7 @@
 
   .form__field-title {
     width: 25%;
-    margin: 18px 0 auto;
+    margin: 16px 0 auto;
 
     &::after {
       display: none;
@@ -348,6 +348,11 @@
     font-size: 19px;
     line-height: 19px;
     padding: 1px 0 2px 16px;
+
+    &--tel,
+    &--email {
+      padding-right: 50px;
+    }
   }
 
   .form__elem-pic {
@@ -380,7 +385,7 @@
   .form__label {
     font-size: 19px;
     line-height: 19px;
-    padding: 17px 0 17px 81px;
+    padding: 15px 0 17px 81px;
     margin-bottom: 24px;
 
     &--type {
@@ -407,6 +412,7 @@
 
     &--name {
       margin-right: 25px;
+      margin-bottom: 25px;
       padding-left: 0;
     }
   }
@@ -419,11 +425,19 @@
     text-align: center;
     margin-top: 17px;
     padding-right: 10px;
+
+    &--tel {
+      padding-right: 20px;
+    }
+
+    &--email {
+      padding-right: 0;
+    }
   }
 
   .form__field {
     &--type {
-      padding-bottom: 23px;
+      padding-bottom: 26px;
     }
 
     &--name {
@@ -432,6 +446,26 @@
 
     &--textarea {
       margin-bottom: 46px;
+    }
+
+    &--email {
+      padding-bottom: 28px;
+    }
+  }
+
+  .form__field-wrap {
+    &--tel {
+      margin-bottom: 24px;
+    }
+  }
+
+  .form__elem-pic {
+    right: 6px;
+  }
+
+  .form__input {
+    &--email {
+      margin-top: -1px;
     }
   }
 
@@ -445,11 +479,15 @@
       justify-content: flex-start;
       margin-right: 0;
     }
+
+    &--name {
+      margin-top: 1px;
+    }
   }
 
   .form__label {
     &--color {
-      width: 33%;
+      width: 30%;
     }
   }
 
