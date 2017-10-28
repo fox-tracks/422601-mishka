@@ -4,7 +4,7 @@
 
 .form__field {
   &--type {
-    padding: 0 0 28px;
+    padding: 0 0 30px;
   }
 
   &--color {
@@ -49,11 +49,11 @@
   text-transform: uppercase;
 
   &--type {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   &--color {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   &--name {
@@ -112,6 +112,10 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:focus + .form__label--color:before {
+    border-color: @lightgreen;
+  }
 
   &:checked + .form__label::after {
     display: block;
@@ -287,11 +291,11 @@
 
   .form__field {
     &--type {
-      padding-bottom: 27px;
+      padding-bottom: 26px;
     }
 
     &--color {
-      padding-bottom: 28px;
+      padding-bottom: 30px;
     }
 
     &--name {
@@ -311,7 +315,7 @@
     }
 
     &--textarea {
-      margin-bottom: 50px;
+      margin-bottom: 47px;
     }
 
     &--btn {
@@ -379,7 +383,8 @@
   .form__btn {
     width: auto;
     max-width: 50%;
-    padding: 14px 30px;
+    margin-top: 3px;
+    padding: 14px 32px 14px 29px;
   }
 
   .form__label {
@@ -440,12 +445,16 @@
       padding-bottom: 26px;
     }
 
+    &--color {
+      padding-bottom: 28px;
+    }
+
     &--name {
       padding-bottom: 26px;
     }
 
     &--textarea {
-      margin-bottom: 46px;
+      margin-bottom: 43px;
     }
 
     &--email {
