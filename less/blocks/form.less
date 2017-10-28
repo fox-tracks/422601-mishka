@@ -113,7 +113,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:focus + .form__label:before {
+  &:focus + .form__label::before {
     border-color: @lightgreen;
   }
 
@@ -466,6 +466,11 @@
     &--tel {
       margin-bottom: 24px;
     }
+
+    &--btn {
+      padding-left: 175px;
+      padding-right: 175px;
+    }
   }
 
   .form__elem-pic {
@@ -497,13 +502,6 @@
   .form__label {
     &--color {
       width: 30%;
-    }
-  }
-
-  .form__field-wrap {
-    &--btn {
-      padding-left: 175px;
-      padding-right: 175px;
     }
   }
 }
