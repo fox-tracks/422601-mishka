@@ -28,10 +28,10 @@
   }
 }
 
-.page-header__humburger-toggle {
+.page-header__hamburger-toggle {
   display: none;
 
-  &:checked ~ .page-header__humburger-label {
+  &:checked ~ .page-header__hamburger-label {
     background: url("../img/icon-menu-close.svg") no-repeat center center;
   }
 
@@ -42,7 +42,7 @@
   }
 }
 
-.page-header__humburger-label {
+.page-header__hamburger-label {
   position: absolute;
   top: 0;
   right: -30px;
@@ -57,11 +57,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__humburger-label {
+  .page-header__hamburger-label {
     display: none;
   }
 
-  .page-header__humburger-toggle {
+  .page-header__hamburger-toggle {
     & ~ .page-header__menu,
     &:checked ~ .page-header__menu {
       position: static;
