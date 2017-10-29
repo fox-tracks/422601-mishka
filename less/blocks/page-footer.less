@@ -31,11 +31,13 @@
   }
 
   .page-footer__logo {
-    display: inline;
+    display: inline-block;
     flex-basis: ~"calc(0.33 * (100% - 100px))";
+    margin-bottom: 10px;
     fill: @black;
     font-size: 0;
     vertical-align: middle;
+    outline: none;
 
     &:hover,
     &:focus {
@@ -51,7 +53,7 @@
     justify-content: flex-end;
     flex-basis: ~"calc(0.33 * (100% - 100px))";
     margin: 0;
-    padding: 23px 0;
+    padding: 22px 0 23px;
     border: none;
     color: @black;
     outline: none;

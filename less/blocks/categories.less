@@ -1,5 +1,5 @@
 .categories {
-  margin: 0 0 28px;
+  margin: 0 0 27px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
@@ -13,6 +13,7 @@
 .categories__link {
   display: block;
   color: inherit;
+  outline: none;
 
   &--interior {
     background-color: @lightgreen;
@@ -118,17 +119,33 @@
   .categories__text {
     padding: 28px 167px 29px 0;
   }
+
+  .categories__pic {
+    &--interior {
+      margin-right: -6px;
+    }
+  }
 }
 
 @media (min-width: @desk-width) {
   .categories {
     width: 1050px;
-    margin: -117px auto 69px;
+    margin: -117px auto 73px;
   }
 
   .categories__text {
     width: auto;
     margin: 0 25px 0 37px;
     padding-right: 350px;
+  }
+
+  .categories__pic {
+    &--interior {
+      margin-right: 5px;
+    }
+
+    &--toys {
+      margin-right: 13px;
+    }
   }
 }

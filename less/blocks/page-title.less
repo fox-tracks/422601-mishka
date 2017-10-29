@@ -19,7 +19,7 @@
 
 .page-title__text {
   margin: 0;
-  padding: 70px 0 76px;
+  padding: 69px 0 76px;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
@@ -27,17 +27,17 @@
   box-sizing: content-box;
 
   &--with-image {
-    min-height: 142px;
+    min-height: 136px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-title {
     position: relative;
-    margin: -55px 0 82px;
+    margin: 0 0 80px;
 
     &--with-image {
-      margin: -55px 0 0;
+      margin: 0;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: center 0;
       background-size: 1150px auto;
@@ -51,47 +51,55 @@
       display: block;
       content: "";
       position: absolute;
-      bottom: -10px;
+      bottom: -12px;
       left: 0;
-      height: 24px;
+      height: 22px;
       width: 100%;
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: 812px 24px;
+      background-size: auto 23px;
       background-repeat: repeat-x;
+      background-position-x: center;
       z-index: 1;
     }
   }
 
   .page-title__text {
-    padding: 95px 0 78px;
+    padding: 94px 0 83px;
     font-size: 43px;
     line-height: 50px;
 
     &--with-image {
       min-height: 470px;
-      padding: 153px 0 118px;
+      padding: 155px 0 119px;
     }
   }
 }
 
 @media (min-width: @desk-width) {
   .page-title {
-    margin: -60px 0 133px;
+    margin: 0 0 133px;
+
+    &::after {
+      bottom: -21px;
+      height: 36px;
+      background-size: auto 34px;
+    }
 
     &--with-image {
-      margin: -60px 0 0;
+      margin: 0;
       background-image: url("../img/hero-desktop@1x.jpg");
       background-position: center 0;
+      background-size: 96% 100%;
+
+      &::after {
+        bottom: -21px;
+        height: 37px;
+        background-size: auto 37px;
+      }
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
       }
-    }
-
-    &::after {
-      bottom: -20px;
-      height: 37px;
-      background-size: 1095px 37px;
     }
   }
 
@@ -101,7 +109,7 @@
     line-height: 57px;
 
     &--with-image {
-      padding: 154px 0 118px;
+      padding: 154px 0 120px;
     }
   }
 }

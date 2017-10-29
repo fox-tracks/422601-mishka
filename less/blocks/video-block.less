@@ -3,8 +3,8 @@
 }
 
 .video-block__title {
-  padding: 25px 28px 25px 89px;
   margin: 0;
+  padding: 25px 28px 25px 89px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -25,12 +25,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  border: none;
   font-size: 0;
   background-color: transparent;
   transform: translate(-50%, -50%);
   transform-origin: top left;
   transition-duration: 0.1s;
+  border: none;
   cursor: pointer;
   outline: none;
 
@@ -77,9 +77,9 @@
 
 @media (min-width: @tablet-width) {
   .video-block {
+    position: relative;
     display: flex;
     margin-bottom: 63px;
-    position: relative;
   }
 
   .video-block__wrapper {
@@ -120,12 +120,13 @@
   .video-block__descr {
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   .video-block__title {
     font-size: 20px;
-    padding: 35px 28px 33px 106px;
+    padding: 37px 28px 33px 104px;
+    background-position: left 40px center;
   }
 }
 
@@ -143,8 +144,8 @@
   }
 
   .video-block__title {
-    padding: 95px 56px 33px 80px;
-    background-position: left 80px top 47px;
+    padding: 95px 56px 33px 79px;
+    background-position: left 80px top 42px;
   }
 
   .video-block__descr-wrap {
