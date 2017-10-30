@@ -26,8 +26,8 @@
             </picture>
           </a>
         </div>
-        <input type="checkbox" name="page-header__btn" id="page-header__btn" class="page-header__humburger-toggle">
-        <label for="page-header__btn" class="page-header__humburger-label"></label>
+        <input type="checkbox" name="page-header__btn" id="page-header__btn" class="page-header__hamburger-toggle">
+        <label for="page-header__btn" class="page-header__hamburger-label"></label>
         <nav class="page-header__menu menu">
           <ul class="menu__list menu__list--main">
             <li class="menu__item">
@@ -43,14 +43,16 @@
                 <svg width="17.6" height="19" class="menu__pic menu__pic--search">
                   <use xlink:href="#icon-search"></use>
                 </svg>
-                Поиск по сайту</a>
+                Поиск по сайту
+              </a>
             </li>
             <li class="menu__item menu__item--cart">
               <a href="#" class="menu__link menu__link--cart">
                 <svg width="20.294" height="19" class="menu__pic menu__pic--cart">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-                Корзина: пока пуста</a>
+                Корзина: пока пуста
+              </a>
             </li>
           </ul>
           <ul class="menu__list menu__list--spec">
@@ -66,12 +68,12 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="page-title page-title--with-image section">
+      <div class="page-title page-title--with-image">
         <div class="wrapper">
           <h1 class="page-title__text page-title__text--with-image">Милые штуки ручной<br>работы для дома</h1>
         </div>
       </div>
-      <section class="categories section">
+      <section class="categories">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories__list">
           <li class="categories__item categories__item--interior">
@@ -94,9 +96,9 @@
           </li>
         </ul>
       </section>
-      <article class="product section">
+      <article class="product">
         <div class="wrapper product__wrapper">
-          <h2 class="product__title section__title">Вязаные корзинки
+          <h2 class="product__title">Вязаные корзинки
             <span class="product__tag">Товар недели</span>
           </h2>
           <p class="product__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -121,16 +123,17 @@
               <source type="image/webp" srcset="img/content-images/triple-set-mobile@1x.webp 1x, img/content-images/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/content-images/triple-set-desktop@1x.jpg 1x, img/content-images/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/content-images/triple-set-tablet@1x.jpg 1x, img/content-images/triple-set-tablet@2x.jpg 2x">
-              <img class="product__image" src="img/content-images/triple-set-mobile@1x.jpg" srcset="img/content-images/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+              <img class="product__image" src="img/content-images/triple-set-mobile@1x.jpg" srcset="img/content-images/triple-set-mobile@2x.jpg 2x"
+                alt="Вязаные корзинки">
             </picture>
           </div>
           <p class="product__price">Цена: <span>990</span> руб.</p>
           <a href="#" class="product__btn btn ">Заказать</a>
         </div>
       </article>
-      <section class="features section">
+      <section class="features">
         <div class="wrapper features__wrap">
-          <h2 class="features__title section__title">Коротко о нас:</h2>
+          <h2 class="features__title">Коротко о нас:</h2>
           <ul class="features__list">
             <li class="features__item features__item--eco">Экологически чистые&nbsp;материалы</li>
             <li class="features__item features__item--money">Скандинавский стиль по&nbsp;российской цене</li>
@@ -141,9 +144,9 @@
           </ul>
         </div>
       </section>
-      <article class="reviews section">
+      <article class="reviews">
         <div class="wrapper rewiews__wrap">
-          <h2 class="reviews__title section__title">Отзывы</h2>
+          <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__slider">
             <blockquote class="reviews__item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
               В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а
@@ -160,7 +163,7 @@
         </div>
       </article>
       <section class="contacts">
-        <div class="contacts__wrap section wrapper">
+        <div class="contacts__wrap wrapper">
           <h2 class="contacts__title">Контакты</h2>
           <div class="contacts__block">
             <div class="contacts__label">e-mail:</div>
@@ -179,7 +182,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer section">
+    <footer class="page-footer">
       <div class="wrapper page-footer__wrap">
         <a class="page-footer__logo">Интернет-магазин Мишка
           <svg width="101.615" height="34.056" class="page-footer__logo-img">
@@ -228,19 +231,19 @@
         <div class="popup__wrap">
           <h2 class="popup__title">Добавить в корзину</h2>
           <p class="popup__descr">Выберите размер:</p>
-          <form action="#" method="get" class="size-choice section">
+          <form action="#" method="get" class="size-choice">
             <div class="size-choice__btn-block">
               <label class="size-choice__label">
-                  <input type="checkbox" name="size" class="size-choice__btn size-choice__btn--s" checked>
-                  <span class="size-choice__marker">S</span>
-                </label>
+                <input type="checkbox" name="size" class="size-choice__btn size-choice__btn--s" checked>
+                <span class="size-choice__marker">S</span>
+              </label>
               <label class="size-choice__label">
-                  <input type="checkbox" name="size" class="size-choice__btn size-choice__btn--m">
-                  <span class="size-choice__marker">M</span>
-                </label>
+                <input type="checkbox" name="size" class="size-choice__btn size-choice__btn--m">
+                <span class="size-choice__marker">M</span>
+              </label>
               <label class="size-choice__label">
-                  <input type="checkbox" name="size" class="size-choice__btn size-choice__btn--l">
-                  <span class="size-choice__marker">L</span>
+                <input type="checkbox" name="size" class="size-choice__btn size-choice__btn--l">
+                <span class="size-choice__marker">L</span>
               </label>
             </div>
             <button class="btn btn--green">Добавить</button>
