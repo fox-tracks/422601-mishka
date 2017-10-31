@@ -88,9 +88,9 @@ gulp.task("serve", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "fonts/**/*.{woff,woff2}",
-    "js/vendor/**/*.js",
-  ], {
+      "fonts/**/*.{woff,woff2}",
+      "js/vendor/**/*.js",
+    ], {
       base: "."
     })
     .pipe(gulp.dest("build"));
@@ -98,7 +98,6 @@ gulp.task("copy", function () {
 
 gulp.task("clean", function () {
   return del("build");
-
 });
 
 gulp.task("build", function (done) {
