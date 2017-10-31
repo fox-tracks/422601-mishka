@@ -12,12 +12,11 @@ function init() {
   myPlacemark = new ymaps.Placemark([59.938848, 30.322954], {
     hintContent: "Мы здесь!"
   }, {
-      iconLayout: "default#image",
-      iconImageHref: "img/icon-map-pin.svg",
-      iconImageSize: [67, 100],
-      iconImageOffset: [-34, -100]
-
-    });
+    iconLayout: "default#image",
+    iconImageHref: "img/icon-map-pin.svg",
+    iconImageSize: [67, 100],
+    iconImageOffset: [-34, -100]
+  });
   myMap.geoObjects
     .add(myPlacemark);
 }
